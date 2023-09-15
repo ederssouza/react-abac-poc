@@ -2,8 +2,38 @@
 
 ## Modelos de controle de acesso (contexto de sistemas de segurança)
 
-- **RBAC (Role-Based Access Control):** O acesso é concedido à base do papel (role) de um usuário (admin, owner, etc);
+- **RBAC (Role-Based Access Control):** O acesso é concedido com base no papel (role) de um usuário (admin, owner, etc);
 - **ABAC (Attribute-Based Access Control):** O acesso é concedido não com base no papel do usuário, mas nos recursos que o usuário pode acessar.
+
+## Vantagens e Destantagens
+
+### RBAC
+
+#### Vantagens
+
+- **Simplicidade:** É mais fácil de entender e implementar do que modelos mais complexos;
+- **Administração centralizada:** Você pode gerenciar permissões em um nível de função, em vez de um nível de usuário individual;
+- **Redução de erros:** Ao agrupar permissões em funções, você reduz a chance de cometer erros ao atribuir permissões.
+
+#### Desvantagens
+
+- **Rigidez:** Pode não ser flexível o suficiente para lidar com casos de uso complexos ou dinâmicos;
+- **Acumulação de funções:** Em sistemas maiores, os usuários podem acumular mais funções do que realmente precisam, potencialmente levando a problemas de segurança;
+- **Manutenção:** À medida que a aplicação cresce, pode ser desafiador gerenciar e revisar constantemente as funções para garantir que elas atendam às necessidades atuais.
+
+### ABAC
+
+#### Vantagens
+
+- **Flexibilidade:** É altamente flexível e pode lidar com uma ampla variedade de casos de uso de controle de acesso, incluindo os complexos.
+- **Granularidade:** Permite controle de acesso mais granular, já que as decisões são tomadas com base em múltiplos atributos;
+- **Adaptabilidade:** Pode se adaptar facilmente a ambientes em mudança, considerando mais atributos ou mudando as regras conforme necessário.
+
+#### Desvantagens
+
+- **Complexidade:** É mais complexo de implementar e entender do que RBAC;
+- **Administração:** A criação e manutenção de políticas ABAC pode ser mais trabalhosa do que simplesmente atribuir funções em RBAC.
+
 
 ## Como rodar o projeto
 
